@@ -1,0 +1,54 @@
+#images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuchasImagenes{
+    padding-top: 9px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.MuchasImagenes .LasImagenes{
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+}
+
+/* para BARRAAAAAAAAAAAAAAAAAAA */
+.PARAlaBarra{
+    background: rgb(0, 100, 231);
+    padding: 25px;
+}
+:root {
+    --bar-width: 0;
+}
+img {
+    max-width: 100%;
+}
+  
+.load-bar {
+    width: 50%;
+    background-color: #ccc;
+    height: 10px;
+    position: relative;
+    margin: 1rem 0;
+}
+.load-bar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(229, 255, 0);
+    width: var(--bar-width);
+    height: 10px;
+}
+.progress {
+    display: block;
+    background-color: rgb(253, 0, 0);
+    height: 10px;
+    width: 0;
+}

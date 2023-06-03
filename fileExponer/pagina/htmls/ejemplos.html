@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/ejemplos.css">
+    
+    <title>Conceptos</title>
+</head> 
+<body>
+    <header>
+        <div><a href="../index.html">API FILE</a></div>
+        <div class="paginas">
+            <div><a href="pagina1.html">Conceptos</a></div>
+            <div><a href="ejemplos.html">Ejemplos</a></div>
+        </div>
+    </header>
+    <section>
+        <div class="MuchasImagenes"> 
+            <div class="Boton">
+                <h4>Seleccione varias imagenes</h4>
+                <input type="file" id="file" multiple>
+            </div>
+            <div class="IMGbox">
+                <div id="images"></div>
+            </div>
+        </div>
+        
+        <div class="PARAlaBarra">
+            <h4>Este es una Barra de progreso cuando seleciona un archivo</h4>
+            <input type="file" id="file1" multiple>
+            <!-- Loader 2 elements -->
+            <div id="load-bar" class="load-bar">
+              <span id="progress" class="progress"></span>
+            </div>
+            <!-- Loader 1 element -->
+            <div id="load-bar" class="load-bar"></div>
+        </div>
+    </section>
+    <script src="../js/ejemplos.js"></script>
+</body>
+</html>

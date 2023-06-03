@@ -1,0 +1,8 @@
+INFLACION
+Definición: Inflación es un aumento sostenido en el nivel general de precios, frecuentemente medido por un índice de
+precios al consumidor. La tasa de inflación es el cambio porcentual en el nivel de precios en un periodo determinado.”
+
+La inflación es el alza de un precio en el tiempo para un producto o servicio particular. La manera más común para 
+calcular la inflación, es calcular el cambio del porcentaje en el CPI Índice de Precios al Consumidor, de un año al 
+otro, de un determinado país. Sin embargo, también puedes calcular la tasa de inflación usando el deflactor del PIB 
+(Producto Interno Bruto)

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/stylePagina1.css">
+    <title>Conceptos</title>
+</head> 
+<body>
+    <header>
+        <div><a href="../index.html">API FILE</a></div>
+        <div class="paginas">
+            <div><a href="pagina1.html">Conceptos</a></div>
+            <div><a href="ejemplos.html">Ejemplos</a></div>
+        </div>
+    </header>
+    <section>
+        <div class="caja presentar1">
+            <div class="titulo t1">
+                <h2 style="margin: 0;">¿QUE ES?</h2>
+            </div>
+            <div class="concepto c1">
+                <p>La API File se creó para facilitar el acceso a archivos locales desde una aplicación web. Permite a nuestras aplicaciones trabajar con los archivos del usuario. Con esta API, podemos leer archivos, mostrar sus contenidos al usuario, procesarlos e incluso cortarlos en partes para un procesamiento avanzado o para enviarlos a un servidor.</p>
+            </div>
+        </div>
+        <div class="caja presentar2">
+            <div class="titulo t2">
+                <h2 style="margin: 0;">CARGANDO ARCHIVOS</h2>
+            </div>
+            <div class="concepto c2">
+                <p>Para cargar los archivos debemos añadir una etiqueta &lt;input&gt; añadiendo un atributo type="file" con esto podremos seleccionar un archivo.</p>
+                
+                <div class="PI">
+                    Seleccione Un Archivo:
+                    <input type="file" id="primerInput" onclick="UNarchivo()">
+                </div>
+                <p>Si deseamos seleccionar mas de un solo archivo se añade un atributo multiple</p>
+                
+                <div class="PI">
+                    Seleccione Uno o Varios Archivo:
+                    <input type="file" id="primerInput2" multiple onclick="MOREarchivos()">
+                </div>
+                <p>El resultado se mostrara en la consola del navegador. Le aparecera el evento, al desplegar el evento dirijase al <i>"target"</i> y luego a <i>"files"</i>, hay encontrara propiedades del documento.</p>
+            </div>
+        </div>
+        <div class="caja presentar322">
+            <div class="concepto c322">
+                <h2>Propiedades de Archivos</h2>
+                <p style="font-size: 25px;">Seleccione uno o mas archivos y se mostraran sus propiedades tales como el nombre, tamaño del archivo, fecha de modificacion y el tipo de texto.</p>
+                <input type="file" name="" id="propiFile" onclick="propiedades()" multiple>
+                <div id="ParaPropiedades"></div>
+            </div>
+        </div>
+        <div class="caja presentar3">
+            <div class="concepto c3">
+                <h2>Leyendo Archivos</h2>
+                <p>Para leer archivos, usamos un objeto llamado FileReader. <br> Algunos metodos que posee son.</p>
+                <ul>
+                    <li><p>readAsText(archivo, codificar)—Este método procesa el contenido del archivo como texto. El contenido se devuelve como texto en el formato UTF-8 a menos que se especifique el atributo codificar. El método intentará interpretar cada byte o secuencia de bytes como caracteres de texto.</p></li>
+                    <li><p>readAsBinaryString(archivo)—Este método lee el contenido del archivo como una sucesión de números enteros en un rango de 0 a 255. El método nos asegura que los datos se van a leer sin intentar interpretarlos. Es útil para procesar contenido binario como imágenes o vídeos.</p></li>
+                    <li><p>readAsDataURL(archivo)—Este método genera un valor de tipo data:url codificado en base64 que representa los datos del archivo.</p></li>
+                    <li><p>readAsArrayBuffer(archivo)—Este método genera datos en formato ArrayBuffer y     representa los datos que contiene el archivo.</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="caja presentar4">
+
+            <div class="TituloTexto"><h3>En este ejemplo usaremos el metodo <i>"readAsText()"</i> para sacar el contenido de un documento, seleccione un archivo de texto ya que si selecciona una imagen, word o un pdf, se imprimiran palabras de error.</h3></div>
+
+            <div class="ContenidoMetodo">
+                <div class="concepto c3">
+                    <input type="file" id="lector1" onclick="LectorDocumento()">
+                </div>
+                <div class="divIMG"><p id="text"></p></div>
+            </div>
+
+        </div>
+
+
+        <div class="caja presentar5">
+
+            <div class="TituloTexto"><h3>En este ejemplo usaremos el metodo <i>"readAsDataURL()"</i> para sacar la ubicacion de la imagen, utilice solo imagenes.</h3></div>
+
+            <div class="ContenidoMetodo">
+                <div class="concepto c3">
+                    <input type="file" id="lector2" onclick="LectorIMG()">
+                </div>
+                <div class="divIMG"><img id="img"></div>
+            </div>
+        </div>
+
+        <!-- EVENTOS -->
+        <div class="caja presentar6">
+            <div class="concepto c6">
+                <h2>Eventos en API FILE</h2>
+                <ul>
+                    <li><b>loadstart —</b> Este evento se desencadena mediante el objeto FileReader cuando comienza a leer un archivo.</li>
+                    <li><b>progress —</b> Este evento se desencadena periódicamente mientras se está leyendo el archivo o blob.</li>
+                    <li><b>abort —</b> Este evento se desencadena cuando se anula el proceso.</li>
+                    <li><b>error —</b> Este evento se desencadena cuando se produce un error en la lectura.</li>
+                    <li><b>loadend —</b> Este evento es similar a load pero se desencadena en caso de éxito o no.</li>
+                </ul>
+                <!-- <input type="file" name="" id="LoadedFile" onclick="Looaded()">
+                <div class="ResultadoLoaded">
+                    <img id="LoadedImg">
+                </div> -->
+            </div>
+        </div>
+
+        <!-- <div>
+            <div class="presentacion"></div>
+            <div class="Solo_un_documento">
+                <input type="file" id="OneFile">
+            </div>
+            <div class="Varios_un_documento">
+                <input type="file" id="MultipleFile" multiple>
+            </div>
+
+        </div> -->
+    </section>
+    <script src="../js/pagina1.js"></script>
+</body>
+</html>

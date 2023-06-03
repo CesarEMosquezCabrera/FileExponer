@@ -1,0 +1,117 @@
+section{
+    background: blue;
+}
+.caja{
+    display: flex;
+    /* padding: 50px; */
+}
+
+/* COLORES DE FONDE DE LAS CAJAS */
+.caja .t1{
+    background: rgb(7, 33, 148);
+}
+.caja .c1{
+    background: rgb(7, 117, 121);
+}
+.caja .t2{
+    background: rgb(12, 77, 20);
+}
+.caja .c2{
+    background: rgb(1, 121, 21);
+}
+.presentar3{
+    background: rgb(172, 28, 3);
+}
+.presentar4{
+    background: green;
+}
+.presentar5{
+    background: rgb(97, 97, 96);
+}
+.presentar322{
+    background: rgb(88, 102, 8);
+}
+.presentar6{
+    background: rgb(10, 143, 103);
+}
+
+.caja .titulo{
+    padding: 35px 25px 50px 50px;
+    display: flex;
+    align-items: center;
+}
+.caja .concepto{
+    padding: 50px 25px 50px 50px;
+}
+.caja .c322{
+    padding: 50px 30px;
+}
+.caja .concepto p{
+    font-size: 30px;
+    text-align: justify;
+    font-weight: bold;
+}
+.caja .titulo h2{
+    width: 500px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.presentar2 .c2{
+    display: flex;
+    flex-direction: column;
+}
+
+.PI{
+    border: none;
+    background: rgb(208, 255, 0);
+    padding: 10px;
+    border: solid 2px #000;
+}
+
+.presentar4{
+    /* flex-direction: column; */
+    align-items: center;
+}
+.presentar5{
+    display: flex;
+    flex-direction: column;
+}
+.presentar5 .divIMG{
+    display: flex;
+    justify-content: center;
+}
+.c322 h2{
+    font-size: 40px;
+}
+.divIMG #text{
+    text-align: justify;
+    width: 950px;
+}
+.c3 h2{
+    font-size: 40px;
+}
+
+.presentar6{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.caja.presentar4{
+    display: block;
+}
+
+.caja .TituloTexto{
+    padding: 15px;
+}
+.caja .TituloTexto h3{
+    margin: 0;
+}
+.ContenidoMetodo .concepto{
+    padding: 30px 50px;
+}
+.ContenidoMetodo #text{
+    margin: 0;
+    padding: 15px;
+}
